@@ -488,7 +488,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 49f342a8180534d4ea77d6cd63b27f80, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e0d1ecf13cbdf1d49860f1b1e0faf83a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -819,37 +819,11 @@ MonoBehaviour:
     source: Timothy Bennett & Michael Dunn
   - title: Programmed by
     source: Timothy Bennett & Michael Dunn
-  - title: Voiced By
-    source: Michael Dunn
   - title: Level Design By
     source: Michael Dunn
-  - title: 'Asset: "Lowpoly Textures Pack"'
-    source: N-hance Studio
-  - title: 'Asset: "RPG Poly Pack - Lite"'
-    source: Gigel
-  - title: 'Asset: "Skybox Series Free"'
-    source: Avionx
-  - title: 'Asset: "Low-Poly Style Nature"'
-    source: Arcsine Technologies
-  - title: 'Audio: "Leaves in Wind"'
-    source: Sandermotions / freesound.org
-  - title: 'Audio: "Collect Crystal"'
-    source: axilirate / freesound.org
-  - title: 'Audio: "Birds chirping 04"'
-    source: swiftoid / freesound.org
-  - title: 'Audio: "Beach Waves Close"'
-    source: DylanTheFish / freesound.org
-  - title: 'Audio: "cicadas"'
-    source: fraska2 / freesound.org
-  - title: 'Audio: "jump-into-water"'
-    source: yurkobb / freesound.org
-  - title: 'Audio: "Magical portal open"'
-    source: alanmcki / freesound.org
-  - title: 'Audio: "FX_Admiral_Warp01"'
-    source: PeteBarry / freesound.org
-  - title: 'Audio: "energy hum"'
-    source: firestorm185 / freesound.org
-  - title: 'Music: "Deep Relaxation"'
+  - title: 'Music: "Outfoxing the Fox"'
+    source: Kevin MacLeod / incompetech.com
+  - title: 'Music: "Hiding Your Reality"'
     source: Kevin MacLeod / incompetech.com
   - title: Visions
     source: 
