@@ -11,6 +11,7 @@ public class Gun : MonoBehaviour
     [SerializeField] private Transform muzzle;
     float timeSinceLastShot;
     public GameObject bullet;
+    AI enemyAIreference;
 
     // UI
     [ Header( "UI" ) ]
@@ -69,6 +70,7 @@ public class Gun : MonoBehaviour
         PlayerShoot.shootInput += Shoot;
         PlayerShoot.reloadInput += StartReload;
 
+        gunData.currentAmmo = gunData.magSize;
         foreach ( var soundPair in soundList ) {
 
             soundsToPlay[ soundPair.soundName ] = soundPair.sound;
@@ -137,6 +139,16 @@ public class Gun : MonoBehaviour
 
                     Ray currRay = new Ray(currPos, endPos - currPos);
                     Debug.DrawRay(currPos, endPos - currPos, Color.red, 10);
+
+                    RaycastHit hit;
+                    if (Physics.Raycast(currRay, out hit))
+                    {
+                        if (hit.collider.gameObject.tag == "Enemy")
+                        {
+                            enemyAIreference = hit.collider.GetComponent<AI>();
+                            enemyAIreference.TakeDamage(20);
+                        }
+                    }
 
                     currPos = endPos;
                     time += timeIncrement;
