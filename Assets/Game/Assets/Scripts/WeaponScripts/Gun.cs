@@ -18,6 +18,7 @@ public class Gun : MonoBehaviour
 
     public TextMeshProUGUI magSize;
     public TextMeshProUGUI currentAmmo;
+    public TextMeshProUGUI reloadText;
 
     // Audio
     [ Header( "Audio" ) ]
@@ -70,6 +71,8 @@ public class Gun : MonoBehaviour
         PlayerShoot.shootInput += Shoot;
         PlayerShoot.reloadInput += StartReload;
 
+        reloadText.enabled = false;
+        
         gunData.currentAmmo = gunData.magSize;
         foreach ( var soundPair in soundList ) {
 
@@ -90,11 +93,16 @@ public class Gun : MonoBehaviour
     private IEnumerator Reload()
     {
 
+        reloadText.enabled = true;
+
         gunData.reloading = true;
         yield return new WaitForSeconds(gunData.reloadTime);
         gunData.currentAmmo = gunData.magSize;
         gunData.reloading = false;
         hasPlayedGunEmptySound = false;
+
+        reloadText.enabled = false;
+
         UpdateUI( );
         currentAmmo.color = new Color( 255, 255, 255, 255 );
 

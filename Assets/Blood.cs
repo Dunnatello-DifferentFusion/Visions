@@ -13,7 +13,6 @@ public class Blood : MonoBehaviour
     void Start()
     {
         canvasRect = GetComponent<RectTransform>();
-        damageTaken();
     }
 
     public void damageTaken()
