@@ -9,8 +9,9 @@ This project involved game design, level design, weapon physics simulation, and 
 Our main objective was to simulate gun physics in a game, which we achieved in this project by following tutorials and prototyping our own systems.
 
 ## Visions
-The game, <i>Visions</i> is a FPS zombie shooter taking place in a futuristic dystopian city. Originally, we were intending to make a multiplayer 5v5 competitive shooter, but we discovered how difficult that would be to implement pretty quickly and pivoted to a more reasonable course project.
+The game, <i>Visions</i>, is a FPS zombie shooter taking place in a futuristic dystopian city. Originally, we were intending to make a multiplayer 5v5 competitive movement shooter, but we discovered how difficult that would be to implement pretty quickly and pivoted to a more reasonable course project.
 
+## Level Design
 The game features an endless wave shooter that will continously spawn zombies until the player dies. Players can use the level design to outsmart the zombie opponents in order to survive longer.
 
 <b>Why are the zombies dancing?</b>
@@ -30,8 +31,8 @@ While making this game, we learned how game weapons work and how to simulate pro
 | <p align="center"><img src="https://avatars.githubusercontent.com/u/11823777" width="40"></img><br>[@Dunnatello](https://www.github.com/Dunnatello)</p> | Backend Developer, UI Developer, Level Design, Documentation |
 
 ## Unity Information
-Universal Render Pipeline  
-Originally developed in Unity [Version] but upgraded to 2023.2.11f1.
+Standard Render Pipeline  
+Originally developed in Unity 2021.3.10f1 but upgraded to 2023.2.11f1.
 
 ## Credits
 ### Assets
