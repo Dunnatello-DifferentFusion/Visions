@@ -1,5 +1,5 @@
 # Visions
-## Dunn-Bennett
+## Dunnatello-DifferentFusion
 
 ### Project Objective
 Our goal for this project was to design a video game in the Unity game engine featuring weapon physics simulation & game AI programming for our Advanced Game & Simulation Development course project.
