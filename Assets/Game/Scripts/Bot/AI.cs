@@ -65,7 +65,7 @@ public class AI : MonoBehaviour {
         
         // Zombie Dies
         if ( health <= 0 ) {
-            this.gameObject.SetActive( false );
+            Destroy( gameObject );
         }
 
     }
