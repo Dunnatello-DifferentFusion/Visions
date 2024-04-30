@@ -19,9 +19,9 @@ The real question is: why not? Honestly, at the time, we did not have much exper
 
 ## Conclusions And Lessons Learned
 ### Weapon Physics & Handling
-While making this game, we learned how game weapons work and how to simulate projectile based weapons accurately.
+While making this game, we learned how game weapons work and how to simulate projectile based weapons accurately. We were able to learn how to create scriptable objects to make modular weapons more effectively.
 ### AI Navigation
-
+This project taught us how to effectively use Unity's AI Navigation system fully to make AI bots that follow the player around the map. Our level design features verticality, so AI bots can use all of the available navigation tools to reach the player efficiently.
 ### Blood Splatter Effects
 
 ## Team Members
