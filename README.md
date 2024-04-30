@@ -34,6 +34,30 @@ We additionally learned how to implement blood splatter on the screen to indicat
 
 ### Scope Reduction
 This project also taught us on how to reduce scope creep to deliver a completed project. Our original idea was not feasible, so scaling down our game design allowed us to deliver a product with all of the functional requirements met.
+
+## Future Plans
+There is definitely potential for more features to be added to this project in the future.
+
+### User Interface Improvements
+Currently, the UI is minimal with only information about the weapon state. However, score and time survived information could be added as UI elements to make the game more engaging.
+
+Additionally, a conclusion screen could show the player's final results and lead the player to a high scores menu with their top scores.
+
+### Universal Render Pipeline Conversion
+The project could be converted to the Universal Render Pipeline to improve graphical fidelity and allow for better lighting/shaders.
+
+### Weapon Improvements
+The weapon could be rendered on a separate camera layer so that the weapon does not clip (stick) into walls. Furthermore, the weapon could be animated to feature weapon shake and muzzle flashes to improve the feedback loop.
+
+### Sounds
+More sounds could be added to the environment to improve the user's immersion. Currently, the zombies do not make noise, but adding footstep and zombie noises could help the player know when zombies are near.
+
+### Animations
+The zombie animation controller could be improved to feature zombie walking and attacking animations.
+
+### Web Support
+Since the project currently has low graphical overhead (since it features minimalistic graphics), it could potentially be converted to run in HTML5.
+
 ## Team Members
 | Team Member | Roles |
 | ------------- | ------------- |
