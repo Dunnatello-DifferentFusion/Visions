@@ -274,7 +274,7 @@ namespace Broccoli.Controller {
 			Vector4 windZoneDirection = Vector4.zero;
 			if (enable) {
 				Vector4 windZoneFactor = Vector4.zero;
-				WindZone[] windZones = FindObjectsOfType<WindZone> ();
+				WindZone[] windZones = FindObjectsByType<WindZone>( FindObjectsSortMode.None );
 				for (int i = 0; i < windZones.Length; i++) {
 					if (windZones [i].gameObject.activeSelf && windZones[i].mode == WindZoneMode.Directional) {
 						windZoneDirection = new Vector4 (windZones [i].transform.forward.x, windZones [i].transform.forward.y, windZones [i].transform.forward.z, 1f);
@@ -467,7 +467,7 @@ namespace Broccoli.Controller {
 		}
 		public void GetWindZoneValues () {
 			valueWindDirection = new Vector4 (1f, 0f, 0f, 0f);
-			WindZone[] windZones = FindObjectsOfType<WindZone> ();
+			WindZone[] windZones = FindObjectsByType<WindZone>( FindObjectsSortMode.None );
 			for (int i = 0; i < windZones.Length; i++) {
 				if (windZones [i].gameObject.activeSelf && windZones[i].mode == WindZoneMode.Directional) {
 					windMain = windZones [i].windMain;

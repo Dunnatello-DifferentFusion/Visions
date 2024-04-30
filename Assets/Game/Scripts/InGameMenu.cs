@@ -1,52 +1,54 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+namespace Visions.UI {
 
-public class InGameMenu : MonoBehaviour
-{
+    using UnityEngine;
+    using UnityEngine.SceneManagement;
 
-    public Canvas menuScreen;
+    public class InGameMenu : MonoBehaviour {
 
-    public void goToMenu( ) {
+        [SerializeField] private Canvas menuScreen;
 
-        SceneManager.LoadScene( "Menu" );
+        // Used By Menu Buttons
+        public void GoToMenu( ) {
 
-    }
-
-    public void setGameMenuState( bool newState ) {
-
-        Cursor.visible = newState;
-        menuScreen.enabled = newState;
-
-        print( menuScreen.enabled );
-        
-        if ( newState ) {
-
-            Cursor.lockState = CursorLockMode.None;
-
-        } else {
-
-            Cursor.lockState = CursorLockMode.Locked;
+            SceneManager.LoadScene( "Menu" );
 
         }
-    }
 
-    // Start is called before the first frame update
-    void Start()
-    {
+        public void SetGameMenuState( bool newState ) {
 
-        Cursor.visible = false;
+            Cursor.visible = newState;
+            menuScreen.enabled = newState;
 
-        setGameMenuState( false );
+            print( menuScreen.enabled );
 
-    }
+            if ( newState ) {
 
-    void Update( ) {
-        
-        if ( Input.GetKeyDown( "escape" ) || Input.GetKeyDown( "m" ) ) {
+                Cursor.lockState = CursorLockMode.None;
 
-            setGameMenuState( !menuScreen.enabled );
+            }
+            else {
+
+                Cursor.lockState = CursorLockMode.Locked;
+
+            }
+        }
+
+        // Start is called before the first frame update
+        void Start( ) {
+
+            Cursor.visible = false;
+
+            SetGameMenuState( false );
+
+        }
+
+        void Update( ) {
+
+            if ( Input.GetKeyDown( KeyCode.Escape ) || Input.GetKeyDown( KeyCode.M ) ) {
+
+                SetGameMenuState( !menuScreen.enabled );
+
+            }
 
         }
 

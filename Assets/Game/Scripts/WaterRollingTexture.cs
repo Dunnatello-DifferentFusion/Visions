@@ -1,36 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+namespace Visions.Environment {
+    using UnityEngine;
 
-public class WaterRollingTexture : MonoBehaviour
-{  
+    public class WaterRollingTexture : MonoBehaviour {
 
-    private Renderer waterMat;
+        private Renderer waterMat;
 
-    private float currentOffset = 0;
-    public float speed = 1;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-        waterMat = gameObject.GetComponent< Renderer >( );
+        private float currentOffset = 0;
+        [SerializeField] private float speed = 1;
 
-    }
+        // Start is called before the first frame update
+        void Start( ) {
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-        currentOffset += ( Time.deltaTime * speed );
-
-        if ( currentOffset > 1 ) {
-
-            currentOffset = 0;
+            waterMat = gameObject.GetComponent<Renderer>( );
 
         }
 
-        waterMat.material.SetTextureOffset( "_MainTex", new Vector2( 0, currentOffset ) );
+        // Update is called once per frame
+        void Update( ) {
+
+            currentOffset += ( Time.deltaTime * speed );
+
+            if ( currentOffset > 1 ) {
+
+                currentOffset = 0;
+
+            }
+
+            waterMat.material.SetTextureOffset( "_MainTex", new Vector2( 0, currentOffset ) );
+
+        }
 
     }
+
 }

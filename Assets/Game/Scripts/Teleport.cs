@@ -1,40 +1,42 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Teleport : MonoBehaviour
-{
-
-    public GameObject teleportLocation;
-    private Transform thePlayer;
-
-    public void TeleportPlayer( ) {
-
-        CharacterController cc = thePlayer.GetComponent< CharacterController >( );
-
-        cc.enabled = false;
-        thePlayer.transform.rotation = teleportLocation.transform.rotation;
-        thePlayer.transform.position = teleportLocation.transform.position;
-        cc.enabled = true;
+namespace Visions.Player {
     
-    }
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-        thePlayer = transform.Find( "PlayerCapsule" );
+    using UnityEngine;
 
-    }
+    public class Teleport : MonoBehaviour {
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-        if ( Input.GetKeyDown( KeyCode.Y ) ) {
+        public GameObject teleportLocation;
+        private Transform thePlayer;
+        [SerializeField] private bool isTesting = false;
 
-            TeleportPlayer( );
-            
+        public void TeleportPlayer( ) {
+
+            CharacterController cc = thePlayer.GetComponent<CharacterController>( );
+
+            cc.enabled = false;
+            thePlayer.transform.SetPositionAndRotation( teleportLocation.transform.position, teleportLocation.transform.rotation );
+            cc.enabled = true;
+
         }
+
+        // Start is called before the first frame update
+        private void Start( ) {
+
+            thePlayer = transform.Find( "PlayerCapsule" );
+
+        }
+
+        // Update is called once per frame
+        private void Update( ) {
+
+            // Debug Testing
+            if ( Input.GetKeyDown( KeyCode.Y ) && isTesting ) {
+
+                TeleportPlayer( );
+
+            }
+
+        }
+
     }
+
 }

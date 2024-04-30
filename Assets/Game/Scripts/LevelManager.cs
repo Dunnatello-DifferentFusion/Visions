@@ -1,64 +1,65 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+namespace Visions.LevelManagement {
 
-using System.Threading.Tasks;
+    using UnityEngine;
+    using UnityEngine.UI;
+    using UnityEngine.SceneManagement;
+
+    using System.Threading.Tasks;
 
 
-public class LevelManager : MonoBehaviour {
-    // Start is called before the first frame update
+    public class LevelManager : MonoBehaviour {
+        // Start is called before the first frame update
 
-    public static LevelManager Instance;
+        public static LevelManager Instance;
 
-    [ SerializeField ] private GameObject loaderCanvas;
-    [ SerializeField ] private Image progressBar;
-    private float target = 0f;
+        [SerializeField] private GameObject loaderCanvas;
+        [SerializeField] private Image progressBar;
+        private float target = 0f;
 
-    void Awake( )
-    {
-        
-        if ( Instance == null ) {
+        void Awake( ) {
 
-            Instance = this;
-            DontDestroyOnLoad( gameObject );
+            if ( Instance == null ) {
 
-        } else {
+                Instance = this;
+                DontDestroyOnLoad( gameObject );
 
-            Destroy( gameObject );
+            }
+            else {
+
+                Destroy( gameObject );
+
+            }
 
         }
 
+        public async void LoadScene( string sceneName ) {
+
+            progressBar.fillAmount = 0f;
+
+            var scene = SceneManager.LoadSceneAsync( sceneName );
+            scene.allowSceneActivation = false;
+
+            loaderCanvas.SetActive( true );
+
+            do {
+
+                target = scene.progress;
+                await Task.Delay( 1 );
+
+            } while ( scene.progress < 0.9f );
+
+            scene.allowSceneActivation = true;
+
+            loaderCanvas.SetActive( false );
+
+        }
+
+        // Update is called once per frame
+        private void Update( ) {
+
+            progressBar.fillAmount = Mathf.MoveTowards( progressBar.fillAmount, target, 3 * Time.deltaTime );
+
+        }
     }
 
-    public async void LoadScene( string sceneName ) {
-
-        progressBar.fillAmount = 0f;
-
-        var scene = SceneManager.LoadSceneAsync( sceneName );
-        scene.allowSceneActivation = false;
-
-        loaderCanvas.SetActive( true );
-
-        do {
-            
-            target = scene.progress;
-            await Task.Delay( 1 );
-
-        } while ( scene.progress < 0.9f );
-
-        scene.allowSceneActivation = true;
-        
-        loaderCanvas.SetActive( false );
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-        progressBar.fillAmount = Mathf.MoveTowards( progressBar.fillAmount, target, 3 * Time.deltaTime );
-
-    }
 }
