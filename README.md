@@ -1,3 +1,5 @@
+<p align="center"><img src="https://github.com/Dunnatello-DifferentFusion/Visions/blob/main/GitHub%20Readme%20Assets/Visions%20Graph.png" /></p>
+
 # Visions
 ## Dunnatello-DifferentFusion
 
