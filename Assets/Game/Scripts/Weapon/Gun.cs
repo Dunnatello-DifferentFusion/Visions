@@ -84,7 +84,7 @@ namespace Visions.Weapon {
             UpdateUI( );
         }
         public void StartReload( ) {
-            if ( !gunData.reloading ) {
+            if ( !gunData.reloading && gunData.magSize != gunData.currentAmmo ) {
                 StartCoroutine( Reload( ) );
             }
         }

@@ -19,8 +19,6 @@ namespace Visions.UI {
             Cursor.visible = newState;
             menuScreen.enabled = newState;
 
-            print( menuScreen.enabled );
-
             if ( newState ) {
 
                 Cursor.lockState = CursorLockMode.None;
