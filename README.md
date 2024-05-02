@@ -64,7 +64,7 @@ There is definitely potential for more features to be added to this project in t
 ### User Interface Improvements
 Currently, the UI is minimal with only information about the weapon state. However, score and time survived information could be added as UI elements to make the game more engaging.
 
-Additionally, a conclusion screen could show the player's final results and lead the player to a high scores menu with their top scores.
+Additionally, a conclusion screen could show the player's final results and lead the player to a high scores menu with their top scores. We could also add a settings menu so that players can change audio preferences, graphical options, and controls.
 
 ### Universal Render Pipeline Conversion
 The project could be converted to the Universal Render Pipeline to improve graphical fidelity and allow for better lighting/shaders.
