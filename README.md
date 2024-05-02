@@ -24,6 +24,20 @@ The game features realistic ballistic physics by utilizing raycasting along with
 <p align="center"><img src="https://github.com/Dunnatello-DifferentFusion/Visions/blob/main/GitHub%20Readme%20Assets/Visions%20Isometric%20View.png" width="750" /></p>
 <p align="center"><b>Figure 1:</b> We wanted our game to feature a chaotic urban environment that takes place in a dystopian/cyberpunk future.</p>
 
+## Video Demonstrations
+
+### Smooth Staircase Traversal
+
+https://github.com/Dunnatello-DifferentFusion/Visions/assets/11823777/ec9ff3f2-00d8-4417-b834-347afc0f0afa
+
+We utilized the popular level design technique of stair clipping by creating invisible slopes to smooth out staircase traversal for the player. This results in a better experience for the player and can reduce camera jitter.
+
+## Gun Physics & Blood Splatter Effects
+
+https://github.com/Dunnatello-DifferentFusion/Visions/assets/11823777/e45f3294-6254-4cf1-8fed-d240f9d7c1c8
+
+This video demo shows how the zombies attack the player and how the bullet physics work. As noted in the [Future Plans](https://github.com/Dunnatello-DifferentFusion/Visions?tab=readme-ov-file#future-plans) section, the gameplay can be improved in the future to give the player more feedback to their actions within the game world.
+
 ## Level Design
 The game features an endless wave shooter that will continously spawn zombies until the player dies. Players can use the level design to outsmart the zombie opponents in order to survive longer.
 
@@ -65,6 +79,8 @@ There is definitely potential for more features to be added to this project in t
 Currently, the UI is minimal with only information about the weapon state. However, score and time survived information could be added as UI elements to make the game more engaging.
 
 Additionally, a conclusion screen could show the player's final results and lead the player to a high scores menu with their top scores. We could also add a settings menu so that players can change audio preferences, graphical options, and controls.
+
+Zombies could also have health bars above their head, or other visual improvements, to give the player more feedback when they attack a zombie.
 
 ### Universal Render Pipeline Conversion
 The project could be converted to the Universal Render Pipeline to improve graphical fidelity and allow for better lighting/shaders.
