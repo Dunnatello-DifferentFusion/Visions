@@ -84,6 +84,7 @@ Zombies could also have health bars above their head, or other visual improvemen
 
 ### Universal Render Pipeline Conversion
 The project could be converted to the Universal Render Pipeline to improve graphical fidelity and allow for better lighting/shaders.
+
 ✅Completed: May 4th 2024 - [Commit](https://github.com/Dunnatello-DifferentFusion/Visions/commit/8e5e7789f8813bfd41b78d5ea3506a734a9d4b33)
 
 ### Weapon Improvements
