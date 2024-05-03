@@ -3,3 +3,10 @@ guid: c9e6294c9d11cb8d11006bf944295342
 NativeFormatImporter:
   userData: 
   assetBundleName: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 73842
+  packageName: Voxel Character Collection!
+  packageVersion: 1.1
+  assetPath: Assets/VoxelCharacters/ToonShading/Materials/ToonLit.mat
+  uploadId: 147132

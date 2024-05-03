@@ -110,3 +110,10 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 73842
+  packageName: Voxel Character Collection!
+  packageVersion: 1.1
+  assetPath: Assets/VoxelCharacters/Meshes/Hero.fbx
+  uploadId: 147132

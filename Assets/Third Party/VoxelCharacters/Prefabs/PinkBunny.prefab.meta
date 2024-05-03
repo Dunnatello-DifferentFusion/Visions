@@ -6,3 +6,10 @@ NativeFormatImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 73842
+  packageName: Voxel Character Collection!
+  packageVersion: 1.1
+  assetPath: Assets/VoxelCharacters/Prefabs/PinkBunny.prefab
+  uploadId: 147132
