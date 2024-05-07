@@ -102,6 +102,11 @@ The map can be improved by creating more interactive elements in the environment
 ### Web Support
 Since the project currently has low graphical overhead (since it features minimalistic graphics), it could potentially be converted to run in HTML5.
 
+## Known Issues
+- Weapon Reload Stuck After Scene Reload
+- Building Missing Collider
+- Water Not Moving After Project Upgrade
+
 ## Unity Information
 Standard Render Pipeline  
 Originally developed in Unity 2021.3.10f1 but upgraded to 2023.2.11f1.
