@@ -99,6 +99,9 @@ The zombie animation controller could be improved to feature zombie walking and 
 ### Map Improvements
 The map can be improved by creating more interactive elements in the environment. The cop car could feature flashing lights, some cars could be on fire, and there could be some additional improvements to the map's lighting. Any additional special effects added to the map environment could add to the player's immersion and experience.
 
+### Unity AI NavMesh Conversion
+The legacy Unity NavMesh system can be converted to the new component-based NavMesh system to provide more control over navigation surfaces. This might also improve the zombie pathfinding.
+
 ### Web Support
 Since the project currently has low graphical overhead (since it features minimalistic graphics), it could potentially be converted to run in HTML5.
 
