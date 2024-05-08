@@ -102,6 +102,8 @@ The map can be improved by creating more interactive elements in the environment
 ### Unity AI NavMesh Conversion
 The legacy Unity NavMesh system can be converted to the new component-based NavMesh system to provide more control over navigation surfaces. This might also improve the zombie pathfinding.
 
+✅Completed: May 8th 2024 - [Commit](https://github.com/Dunnatello-DifferentFusion/Visions/commit/7de213d361c28a16552c57100309c58769c53e0d)
+
 ### Web Support
 Since the project currently has low graphical overhead (since it features minimalistic graphics), it could potentially be converted to run in HTML5.
 
