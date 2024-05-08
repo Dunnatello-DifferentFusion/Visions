@@ -109,8 +109,6 @@ Since the project currently has low graphical overhead (since it features minima
 
 ## Known Issues
 - Weapon Reload Stuck After Scene Reload
-- Building Missing Collider
-- Water Not Moving After Project Upgrade
 
 ## Unity Information
 Standard Render Pipeline  
