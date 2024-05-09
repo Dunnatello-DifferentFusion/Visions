@@ -111,7 +111,7 @@ Since the project currently has low graphical overhead (since it features minima
 - Weapon Reload Stuck After Scene Reload
 
 ## Unity Information
-Standard Render Pipeline  
+Universal Render Pipeline  
 Originally developed in Unity 2021.3.10f1 but upgraded to 2023.2.11f1.
 
 ## Credits
