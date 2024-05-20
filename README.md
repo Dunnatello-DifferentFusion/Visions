@@ -85,7 +85,7 @@ Zombies could also have health bars above their head, or other visual improvemen
 ### Universal Render Pipeline Conversion
 The project could be converted to the Universal Render Pipeline to improve graphical fidelity and allow for better lighting/shaders.
 
-✅Completed: May 4th 2024 - [Commit](https://github.com/Dunnatello-DifferentFusion/Visions/commit/e0ec03ea86e9a36e3cd6996dcc3de6376d1b859f)
+✅ Completed: May 4th 2024 - [Commit](https://github.com/Dunnatello-DifferentFusion/Visions/commit/e0ec03ea86e9a36e3cd6996dcc3de6376d1b859f)
 
 ### Weapon Improvements
 The weapon could be rendered on a separate camera layer so that the weapon does not clip (stick) into walls. Furthermore, the weapon could be animated to feature weapon shake and muzzle flashes to improve the feedback loop.
@@ -99,10 +99,13 @@ The zombie animation controller could be improved to feature zombie walking and 
 ### Map Improvements
 The map can be improved by creating more interactive elements in the environment. The cop car could feature flashing lights, some cars could be on fire, and there could be some additional improvements to the map's lighting. Any additional special effects added to the map environment could add to the player's immersion and experience.
 
+<b>Unity Toon Shader Conversion for Scene Materials</b>
+✅ Completed: May 20th 2024 - [Pull Request](https://github.com/Dunnatello-DifferentFusion/Visions/pull/2)
+
 ### Unity AI NavMesh Conversion
 The legacy Unity NavMesh system can be converted to the new component-based NavMesh system to provide more control over navigation surfaces. This might also improve the zombie pathfinding.
 
-✅Completed: May 8th 2024 - [Commit](https://github.com/Dunnatello-DifferentFusion/Visions/commit/7de213d361c28a16552c57100309c58769c53e0d)
+✅ Completed: May 8th 2024 - [Commit](https://github.com/Dunnatello-DifferentFusion/Visions/commit/7de213d361c28a16552c57100309c58769c53e0d)
 
 ### Web Support
 Since the project currently has low graphical overhead (since it features minimalistic graphics), it could potentially be converted to run in HTML5.
