@@ -99,7 +99,7 @@ The zombie animation controller could be improved to feature zombie walking and 
 ### Map Improvements
 The map can be improved by creating more interactive elements in the environment. The cop car could feature flashing lights, some cars could be on fire, and there could be some additional improvements to the map's lighting. Any additional special effects added to the map environment could add to the player's immersion and experience.
 
-<b>Unity Toon Shader Conversion for Scene Materials</b>
+<b>Unity Toon Shader Conversion for Scene Materials</b>  
 ✅ Completed: May 20th 2024 - [Pull Request](https://github.com/Dunnatello-DifferentFusion/Visions/pull/2)
 
 ### Unity AI NavMesh Conversion
