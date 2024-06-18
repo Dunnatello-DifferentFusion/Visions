@@ -90,6 +90,9 @@ The project could be converted to the Universal Render Pipeline to improve graph
 ### Weapon Improvements
 The weapon could be rendered on a separate camera layer so that the weapon does not clip (stick) into walls. Furthermore, the weapon could be animated to feature weapon shake and muzzle flashes to improve the feedback loop.
 
+<b>Separate Camera Layer</b>  
+✅ Completed: May 10th 2024 - [Commit](https://github.com/Dunnatello-DifferentFusion/Visions/commit/8f6cb07531b36ca5a133049131d970c64a4dc60f)
+
 ### Sounds
 More sounds could be added to the environment to improve the user's immersion. Currently, the zombies do not make noise, but adding footstep and zombie noises could help the player know when zombies are near.
 
